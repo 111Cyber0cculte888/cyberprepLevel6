@@ -2,7 +2,7 @@
 Framework for cyberfight 
 
 - Make connector for deploye your machine 
-  you need :
+  - you need :
     - ansible
 - Make spa single page application
 
