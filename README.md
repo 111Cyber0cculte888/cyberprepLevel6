@@ -1,12 +1,19 @@
 # CYBER PREP LEVEL 6
-Framework for cyberfight 
 
-- Make connector for deploye your machine 
-  - you need :
-    - ansible
-- Make spa single page application
-
-- Go connect to the ice cube and break it
+You need unlock your mind, hacker are hacke by psychologie and are infected by mind injection.
 
 
-- Need make folder for pre prod app 
+
+## Framework for cyberfight : 
+
+### STEP 1 
+
+Need make folder for pre prod app 
+
+    Download docker 
+    Download docker-compose
+    Make image docker archlinux for work inside
+    Install fastapi
+    Install vuejs
+    
+Done
