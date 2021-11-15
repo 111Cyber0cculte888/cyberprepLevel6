@@ -48,31 +48,31 @@
 
 [Dockerfile](https://github.com/111Cyber0cculte888/cyberprepLevel6/blob/main/preprod/Dockerfile)
       
-Build images of cyberprep level 6 docker
+  - [X] Build images of cyberprep level 6 docker
 
 ```
 sudo docker build -t archlinux:cyberpreplevel6 .
 ```
 
-      Show all docker images
+  - [X] Show all docker images
 
 ```
 sudo docker images -a
 ```
 
-      Remove all docker images (warning you remove all)
+  - [X] Remove all docker images (warning you remove all)
 
 ```
 sudo docker rmi $(sudo docker images -q) -f
 ```
 
-      Id generator
+  - [X] Id generator
 
 ```
 cat /proc/sys/kernel/random/uuid | tr '[:lower:]' '[:upper:]'
 ```
  
-Make manager docker in bash 
+- [X] Make manager docker in bash 
 
 [TASK_MANAGE_ID_00.sh](https://github.com/111Cyber0cculte888/cyberprepLevel6/blob/main/preprod/TASK_MANAGE_ID_00.sh)
 
