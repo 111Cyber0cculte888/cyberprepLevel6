@@ -49,9 +49,9 @@
       
       Build images of cyberprep level 6 docker
 
-      ```bash
-      sudo docker build -t archlinux:cyberpreplevel6 .
-      ```
+```
+sudo docker build -t archlinux:cyberpreplevel6 .
+```
 
       Show all docker images
 
