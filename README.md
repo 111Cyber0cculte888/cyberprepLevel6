@@ -44,8 +44,7 @@
 
 ### STEP 1 
 
-Need make folder for pre prod app 
-
+  - [ ] Need make folder for pre prod app 
   - [ ] Download docker 
   - [ ] Download docker-compose
   - [ ] Make image docker archlinux for work inside
