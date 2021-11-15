@@ -14,7 +14,7 @@
   - [X] Download docker 
   
 ## CMD
-    ```
+
     sudo pacman -S docker
-    ```
+
 ## CMD
