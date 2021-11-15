@@ -5,12 +5,12 @@
   - [X] Download docker 
   - [X] Download docker-compose
   - [X] Install tree
-  - [ ] Make image docker archlinux for work inside
+  - [X] Make image docker archlinux for work inside + bash docker manager 
   - [ ] Install fastapi
   - [ ] Install vuejs
 
 
-## TASK ID 01
+## TASK ID 9F17557A-EF8F-4C96-A508-26E6D9EB653C
 
   - [X] Download docker 
   
@@ -20,7 +20,7 @@
 
 ## CMD
 
-## TASK ID 02
+## TASK ID D7DBCD4C-2EF3-4452-9A2C-BCFFE1A6CF90
 
   - [X] Download docker-compose
   
@@ -30,10 +30,48 @@
 
 ## CMD
 
-## TASK ID 03 
+## TASK ID 1C2D3ECA-EB2B-4EE6-AA46-FD94D1163661 
 
   - [X] Install tree
 
 ## CMD
     sudo pacman -S tree
+## CMD
+
+## TASK ID 8D6D21BE-90FA-4348-BB3C-8B1798048547
+
+  - [X] Make image docker archlinux for work inside
+
+## CMD
+
+    make docker file
+      https://github.com/111Cyber0cculte888/cyberprepLevel6/blob/main/preprod/Dockerfile
+    
+      Build images of cyberprep level 6 docker
+      ```
+      sudo docker build -t archlinux:cyberpreplevel6 .
+      ```
+      Show all docker images
+      ```
+      sudo docker images -a
+      ```
+      Remove all docker images (warning you remove all)
+      ```
+      sudo docker rmi $(sudo docker images -q) -f
+      ```
+      Id generator
+      ```
+      cat /proc/sys/kernel/random/uuid | tr '[:lower:]' '[:upper:]'
+      ```
+ 
+    make manager docker in bash 
+      https://github.com/111Cyber0cculte888/cyberprepLevel6/blob/main/preprod/TASK_MANAGE_ID_00.sh
+
+      [ 0 ] BUILD CYBER PREP LEVEL 6 IMAGE
+      [ 1 ] SHOW ALL DOCKER IMAGES
+      [ 2 ] REMOVE ALL DOCKER IMAGES
+      [ 3 ] ID GENERATOR
+      [ * ] EXIT
+      [ ? ] GIVE ME YOUR CHOICE'
+    
 ## CMD
