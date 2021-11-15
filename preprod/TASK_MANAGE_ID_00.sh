@@ -12,6 +12,12 @@ function TASK_SHOW_ID_8E92FDFF-9937-434A-A69D-1BE6222D4F44(){
 }
 
 function TASK_REMOVE_ID_506C028F-B343-4F2E-90C9-59F9E1F01AA0(){
+    sudo docker ps -a  
+    echo "[?] Give me container id for stop it"
+    read w
+    docker stop $w
+    sudo docker system prune
+    sudo docker system prune -a
 	sudo sh $PATH_TASK/TASK_REMOVE_ID_506C028F-B343-4F2E-90C9-59F9E1F01AA0.sh
 }
 
