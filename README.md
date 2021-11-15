@@ -4,8 +4,8 @@
 
 MANIFEST
 
-You need unlock your mind, hacker are hacked by psychologie and are infected by mind injection.
-World change fast be prep for the futur.  
+    You need unlock your mind, hacker are hacked by psychologie and are infected by mind injection.
+    World change fast be prep for the futur.  
 
 MANIFEST
 
