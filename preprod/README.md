@@ -45,8 +45,8 @@
 ## CMD
 
     make docker file
-      https://github.com/111Cyber0cculte888/cyberprepLevel6/blob/main/preprod/Dockerfile
-    
+      [Dockerfile](https://github.com/111Cyber0cculte888/cyberprepLevel6/blob/main/preprod/Dockerfile)
+      
       Build images of cyberprep level 6 docker
       ```
       sudo docker build -t archlinux:cyberpreplevel6 .
@@ -65,7 +65,7 @@
       ```
  
     make manager docker in bash 
-      https://github.com/111Cyber0cculte888/cyberprepLevel6/blob/main/preprod/TASK_MANAGE_ID_00.sh
+      [TASK_MANAGE_ID_00.sh](https://github.com/111Cyber0cculte888/cyberprepLevel6/blob/main/preprod/TASK_MANAGE_ID_00.sh)
 
       [ 0 ] BUILD CYBER PREP LEVEL 6 IMAGE
       [ 1 ] SHOW ALL DOCKER IMAGES
