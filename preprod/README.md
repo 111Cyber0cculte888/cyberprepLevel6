@@ -38,11 +38,9 @@
     sudo pacman -S tree
 ## CMD
 
+
+
 ## TASK ID 8D6D21BE-90FA-4348-BB3C-8B1798048547
-
-  - [X] Make image docker archlinux for work inside
-
-## CMD
 
   - [X] Make image docker archlinux for work inside + bash docker manager 
 
@@ -50,28 +48,36 @@
       
   - [X] Build images of cyberprep level 6 docker
 
+## CMD
 ```
 sudo docker build -t archlinux:cyberpreplevel6 .
 ```
+## CMD
 
   - [X] Show all docker images
 
+## CMD
 ```
 sudo docker images -a
 ```
+## CMD
 
   - [X] Remove all docker images (warning you remove all)
 
+## CMD
 ```
 sudo docker rmi $(sudo docker images -q) -f
 ```
+## CMD
 
   - [X] Id generator
 
+## CMD
 ```
 cat /proc/sys/kernel/random/uuid | tr '[:lower:]' '[:upper:]'
 ```
- 
+## CMD
+
 - [X] Make manager docker in bash 
 
 [TASK_MANAGE_ID_00.sh](https://github.com/111Cyber0cculte888/cyberprepLevel6/blob/main/preprod/TASK_MANAGE_ID_00.sh)
