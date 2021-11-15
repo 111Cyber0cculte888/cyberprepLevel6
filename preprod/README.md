@@ -48,18 +48,25 @@
       [Dockerfile](https://github.com/111Cyber0cculte888/cyberprepLevel6/blob/main/preprod/Dockerfile)
       
       Build images of cyberprep level 6 docker
-      ```
+
+      ```bash
       sudo docker build -t archlinux:cyberpreplevel6 .
       ```
+
       Show all docker images
+
       ```
       sudo docker images -a
       ```
+
       Remove all docker images (warning you remove all)
+
       ```
       sudo docker rmi $(sudo docker images -q) -f
       ```
+
       Id generator
+
       ```
       cat /proc/sys/kernel/random/uuid | tr '[:lower:]' '[:upper:]'
       ```
