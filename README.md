@@ -1,5 +1,4 @@
-# 𓇽 CYBER PREP LEVEL 6 𓇽
-
+# 𓁽 𓇽 CYBER PREP LEVEL 6 𓇽 𓆃
 ### MESSAGE
 
     SEND
