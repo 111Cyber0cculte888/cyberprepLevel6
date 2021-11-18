@@ -1,4 +1,4 @@
-# CYBER PREP LEVEL 6
+# 𓇽 CYBER PREP LEVEL 6 𓇽
 
 ### MESSAGE
 
