@@ -1,10 +1,8 @@
-#!/bin/bash
-# Purpose: Demonstrate usage of select and case with toggleable flags to indicate choices
-# 2013-05-10 - Dennis Williamson
+
 
 choice () {
-    local choice=$1
-    if [[ ${opts[choice]} ]] # toggle
+    choice=$1
+    if [[ ${opts[choice]} ]]
     then
         opts[choice]=
     else
@@ -44,7 +42,10 @@ do
     done
 done
 
-printf '%s\n' 'Options chosen:'
+echo "You choice"
+
+echo "${!opts[@]}"
+read
 for opt in "${!opts[@]}"
 do
     if [[ ${opts[opt]} ]]
