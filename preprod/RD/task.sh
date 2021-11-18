@@ -1,13 +1,18 @@
-function memo(){
-	echo "task 1"
-	echo "task 2"
-	#read
-	if (( $1 == 1 ));
-	then
-		echo "task 1 executed";
-	else
-		echo "task 2 executed";
-	fi
-	memo $1	
+
+
+
+while [ 1 ]
+do
+
+funtion showTask(){
+x=$(ls TASK/);echo $x
+z=$(x=$(ls TASK/);echo $x)
+buffer=("${(w)$(echo $z)}")
 }
-memo
+
+read line
+awk '{if(NR==$line) print $0}'
+sleep 3
+clear
+
+done 
