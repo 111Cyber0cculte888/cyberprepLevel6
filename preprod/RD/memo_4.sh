@@ -1,5 +1,39 @@
 MEMO=''
 clear
+
+
+END=$(ls TASK |wc -l);
+echo "[+] $END"
+start=0;
+echo "[+] $START"
+while (($START <= $END))
+do
+		FOLDER=$(ls TASK/)
+        BUFFER=("${(f)$(echo $FOLDER)}")
+        ls TASK |awk '{if(NR=='$START') print $0}';
+((start++))
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #while :;
 #do
 		FOLDER=$(ls TASK/)
