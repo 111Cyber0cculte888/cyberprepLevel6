@@ -3,9 +3,7 @@ clear
 
 funtion showTask(){
 END=$(ls TASK |wc -l);
-#echo "[+] $END"
 START=1;
-#echo "[+] $START"
 while (($START <= $END))
 do
 	FOLDER=$(ls TASK/)
@@ -31,24 +29,54 @@ function rmTask(){
 	MEMO[(r)$rm]=()
 }
 
+
+function execTask(){
+	echo "[+] Task execution started"
+
+	LIST_TASK=$(memoTask)
+	echo $LIST_TASK|sed 's/ /\n/g' 
+
+END_TASK=$(echo $LIST_TASK|sed 's/ /\n/g' |wc -l);
+echo "[+] $END_TASK"
+START_TASK=1;
+echo "[+] $START_TASK"
+read 
+while (($START_TASK <= $END_TASK))
+do
+	echo "[ $START_TASK ] $(echo $LIST_TASK |sed 's/ /\n/g' |awk '{if(NR=='$START_TASK') print $0}')"; 
+	zsh TASK/$(echo $LIST_TASK |sed 's/ /\n/g' |awk '{if(NR=='$START_TASK') print $0}');
+	read
+#	((START_TASK++))
+	((START_TASK++))
+done
+
+	
+
+}
+
+
 function choice(){
 	echo "[ ! ] Do you whant add task or remove"
-	echo "[ ! ] 1) Add 2) Remove"
+	echo "[ ! ] 1) Add 2) Remove 3) Execute"
 	read AddRm
 	if (($AddRm == 1))
 	then
 		clear
 		showTask
 		addTask
-	else (($AddRm == 2))
+	elif (($AddRm == 2))
+	then
 		clear
 		showTask
 		rmTask
+	else (($AddRm == 3))
+		execTask
+		read
 	fi
 }
 
 function memoTask(){
-	echo $MEMO   
+	echo $MEMO  |sed 's/ /\n/g' |tac
 }
 
 function main(){
