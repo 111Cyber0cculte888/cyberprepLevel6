@@ -36,21 +36,16 @@ function execTask(){
 	LIST_TASK=$(memoTask)
 	echo $LIST_TASK|sed 's/ /\n/g' 
 
-END_TASK=$(echo $LIST_TASK|sed 's/ /\n/g' |wc -l);
-echo "[+] $END_TASK"
-START_TASK=1;
-echo "[+] $START_TASK"
-read 
-while (($START_TASK <= $END_TASK))
-do
-	echo "[ $START_TASK ] $(echo $LIST_TASK |sed 's/ /\n/g' |awk '{if(NR=='$START_TASK') print $0}')"; 
-	zsh TASK/$(echo $LIST_TASK |sed 's/ /\n/g' |awk '{if(NR=='$START_TASK') print $0}');
-	read
-#	((START_TASK++))
-	((START_TASK++))
-done
+	END_TASK=$(echo $LIST_TASK|sed 's/ /\n/g' |wc -l);
+	START_TASK=1;
+	while (($START_TASK <= $END_TASK))
+	do
+		echo "[ $START_TASK ] $(echo $LIST_TASK |sed 's/ /\n/g' |awk '{if(NR=='$START_TASK') print $0}')"; 
+		zsh TASK/$(echo $LIST_TASK |sed 's/ /\n/g' |awk '{if(NR=='$START_TASK') print $0}');
+		((START_TASK++))
+	done
 
-	
+
 
 }
 
