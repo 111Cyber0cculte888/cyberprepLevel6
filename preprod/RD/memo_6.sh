@@ -1,14 +1,19 @@
+# Neurone + input plusieur synapse and symape inpout exit just un  si ya tu tire "fire"
 MEMO=''
 clear
 
+TASK_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )/TASK"
+
+
+
 funtion showTask(){
-END=$(ls TASK |wc -l);
+END=$(ls $TASK_DIR |wc -l);
 START=1;
 while (($START <= $END))
 do
-	FOLDER=$(ls TASK/)
+	FOLDER=$(ls $TASK_DIR)
 	BUFFER=("${(f)$(echo $FOLDER)}")
-	echo "[ $START ] $(ls TASK |awk '{if(NR=='$START') print $0}')"; 
+	echo "[ $START ] $(ls $TASK_DIR |awk '{if(NR=='$START') print $0}')"; 
 	((START++))
 done
 }
@@ -17,7 +22,7 @@ function addTask(){
 	memoTask
 	echo "[ ! ] Give the task number"
 	read TASK
-	VAR=$(ls TASK |awk '{if(NR=='$TASK') print $0}')
+	VAR=$(ls $TASK_DIR |awk '{if(NR=='$TASK') print $0}')
 	MEMO=("$VAR" "${MEMO[@]}")
 
 }

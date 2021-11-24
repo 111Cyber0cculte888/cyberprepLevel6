@@ -1,6 +1,9 @@
 # CYBER PREP LEVEL 6
 #
 # VERSION               0.0.1
+# Python 3.8
+# FAST API
+# VUE JS
 
 FROM	 archlinux:latest
 MAINTAINER 	111Cyber0cculte888
